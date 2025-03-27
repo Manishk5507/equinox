@@ -5,7 +5,7 @@
             {
                 "name": "FOSS Weekend",
                 "start_time": "9:00 AM",
-                "start_date": "To be announced",
+                "start_date": "27-28 March",
                 "description": "A three-day online coding event focused on showcasing Git skills, solving technical challenges, and winning exciting prizes.",
                 "mode": "Online",
                 "duration": "3 days",
@@ -25,7 +25,7 @@
             {
                 "name": "Scratch-a-thon",
                 "start_time": "10:00 AM",
-                "start_date": "To be announced",
+                "start_date": "27-28 March",
                 "description": "A 2-hour in-person coding challenge on Scratch, where participants build creative projects like games, interactive stories, or animations.",
                 "mode": "Offline",
                 "duration": "2 hours",
@@ -112,7 +112,7 @@
             {
                 "name": "Code Arena",
                 "start_time": "9:00 AM",
-                "start_date": "To be announced",
+                "start_date": "27-28 March",
                 "description": "An offline 1v1 coding tournament featuring a double elimination format with two tracks: Freshers and Universal.",
                 "mode": "Offline",
                 "duration": "Full Day",
