@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Poc {
   name: string;
@@ -90,7 +91,7 @@ const SingleEvent: React.FC<SingleEventProps> = ({ event, onBack }) => {
   const lampSrc = isLive ? "/events/lamp-glow.png" : "/events/lamp-red.png";
 
   return (
-    <div className="min-h-screen bg-[#120303] text-white font-atelier px-2 py-4 sm:px-6 md:px-8 max-w-6xl mx-auto flex flex-col justify-center">
+    <div className="min-h-screen bg-[#120303] text-white font-atelier py-1 sm:px-6 md:px-1 max-w-6xl mx-auto flex flex-col justify-center">
       <div className="border border-[#c9c2b6] p-2 sm:p-6 shadow-md flex flex-col space-y-4 bg-[#120303]">
         {/* Title / Date / Time */}
         <div className="flex flex-row justify-between">
@@ -103,12 +104,7 @@ const SingleEvent: React.FC<SingleEventProps> = ({ event, onBack }) => {
             </p>
           </div>
           <div className="mr-4">
-            <Image
-              src={lampSrc}
-              alt="Lamp Status"
-              width={20}
-              height={20}
-            />
+            <Image src={lampSrc} alt="Lamp Status" width={20} height={20} />
           </div>
         </div>
 
@@ -146,12 +142,12 @@ const SingleEvent: React.FC<SingleEventProps> = ({ event, onBack }) => {
         {/* Registration / QR */}
         <div className="flex flex-row justify-between">
           <div>
-            <p className="text-sm sm:text-base text-[#977864] font-semibold">
-              Register Here
+            <p className="text-sm sm:text-base text-[#977864] font-semibold hover:uner">
+              <Link href="https://example.com/register" target="_blank">
+                Register Here
+              </Link>
             </p>
-            <p className="text-sm sm:text-base text-[#977864]">
-              Or Scan QR
-            </p>
+            <p className="text-sm sm:text-base text-[#977864]">Or Scan QR</p>
           </div>
           <Image src="/events/qr.png" alt="QR Code" width={100} height={100} />
         </div>

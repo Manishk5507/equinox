@@ -58,7 +58,7 @@ export default function EventsHomePage() {
               onClick={() => handleEventClick(event.name, event.bg)}
               style={{ backgroundImage: `url(${event.img})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#ffcc00] px-4 py-2 rounded-md md:rotate-270">
+              <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#ffcc00] px-4 py-2 rounded-md md:rotate-270 z-100">
                 {event.name}
               </span>
             </div>
